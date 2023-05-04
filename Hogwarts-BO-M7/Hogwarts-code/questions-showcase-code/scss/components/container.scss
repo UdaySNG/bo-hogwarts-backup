@@ -1,0 +1,53 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+
+
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 60rem;
+    background-color: map-get(colors.$dark-purp, "background");
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    flex-direction: column
+}
+
+
+
+.questions__title{
+    @include mixins.fontPlayfair;
+    font-size: 4rem;
+    height: 50rem;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+ 
+}
+
+.choice__container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(76, 76, 101);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 230, 0);
+  }
+
+  .choice__prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: red;
+    color: rgb(255, 230, 0);
+  }
+
+  .choice__text{
+    padding: 1.5rem;
+  }
+

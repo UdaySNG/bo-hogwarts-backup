@@ -1,0 +1,34 @@
+
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+    transform: scale(1.05);
+  }
+
+
+  .dropdown-content a:hover {
+    color: rgb(138, 124, 0);
+    transform: scale(1.02);
+  }
+
+  .dropdown-content a:nth-of-type(3) {
+    border-bottom: none;
+  }
+  
+
+
+    /* Toon het dropdown-menu met een fade-in animatie */
+    .dropdown-content.show {
+        animation: fadeIn 0.5s ease forwards;
+      }
+      
+      /* Definieer de fadeIn animatie */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }

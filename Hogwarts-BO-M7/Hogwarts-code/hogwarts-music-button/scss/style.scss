@@ -1,0 +1,8 @@
+//Abstracts
+@use "./abstracts/animation";
+@use "./abstracts/colors";
+@use "./abstracts/reset";
+
+//Components
+@use "./base.scss";
+@use "./components/slider.scss";

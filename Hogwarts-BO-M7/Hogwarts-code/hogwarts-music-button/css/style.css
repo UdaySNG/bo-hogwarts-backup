@@ -1,0 +1,70 @@
+.volume-button:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  width: 0;
+  transition: width 0.2s ease;
+}
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: margin-top 0.2s ease;
+  margin-top: -0.205rem;
+}
+.volume-slider.active {
+  width: 6.25rem;
+}
+
+.volume-slider:not(.active)::-webkit-slider-thumb {
+  width: 0;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.volume-control {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.volume-button {
+  border: none;
+  background-color: transparent;
+  color: #4b064b;
+  font-size: 3.5rem;
+  margin-right: 1.4rem;
+  padding-left: 0.5rem;
+}
+
+.volume-slider {
+  width: 1;
+  background-color: #d3d3d3;
+  height: 0.5135rem;
+  border-radius: 0.3125rem;
+}
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #800080;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

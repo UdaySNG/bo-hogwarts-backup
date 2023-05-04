@@ -1,0 +1,27 @@
+.volume-button {
+    &:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s ease;
+    }
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    width: 0;
+    transition: width 0.2s ease;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        transition: margin-top 0.2s ease;
+        margin-top: -0.205rem;
+    }
+
+    &.active {
+        width: 6.25rem;
+    }
+}
+
+.volume-slider:not(.active)::-webkit-slider-thumb {
+    width: 0;
+}

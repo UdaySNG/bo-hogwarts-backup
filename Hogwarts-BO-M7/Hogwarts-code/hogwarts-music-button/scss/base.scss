@@ -1,0 +1,19 @@
+@use "./abstracts/colors";
+
+.volume-control {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.volume-button {
+    border: none;
+    background-color: transparent;
+    color: map-get(colors.$color-purple-dark, "color");    
+    font-size: 3.5rem;
+    margin-right: 1.4rem;
+    padding-left: 0.5rem;
+}
+
